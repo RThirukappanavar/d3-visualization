@@ -1,16 +1,18 @@
 
     $(document).ready(function() {
+
+
+
             $.ajax({
                 type: "GET",
                 url: "Telco-Customer-Churn.csv",
                 dataType: "text",
                 success: function(data) {processData(data);}
             });
-
-
-      
+            
             function processData(data){
-                console.log(data);
+                data=CSVToArray(data);
+                customerData= prepareData(data.splice(0, 1),data);
             }
 
             var oFileIn = document.getElementById('my_file_input');
