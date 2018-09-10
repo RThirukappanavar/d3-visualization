@@ -15,7 +15,7 @@
                 customerData= prepareData(data.splice(0, 1),data);
             }
 
-            var oFileIn = document.getElementById('my_file_input');
+            // var oFileIn = document.getElementById('my_file_input');
             var ogenderButton = document.getElementById('gender_graph');
             var oSeniorCitizenButton = document.getElementById('senior_citizen');
             var oshowPartnerGraphButton = document.getElementById('show_Partner_Button');
@@ -27,9 +27,9 @@
             
 
 
-            if(oFileIn.addEventListener) {
-                oFileIn.addEventListener('change', filePicked, false);
-            }
+            // if(oFileIn.addEventListener) {
+            //     oFileIn.addEventListener('change', filePicked, false);
+            // }
             if(ogenderButton.addEventListener) {
                 ogenderButton.addEventListener('click', showGenderGraph, false);
             }
